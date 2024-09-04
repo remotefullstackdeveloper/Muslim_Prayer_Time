@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Fancy Clock with Prayer Times</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-clock">
+      <select id="timezoneSelect" onchange="updateMainClock()">
+        <option value="local">Local Time</option>
+        <option value="UTC">UTC</option>
+        <option value="America/New_York">New York (ET)</option>
+        <option value="Europe/London">London (BST)</option>
+        <option value="Asia/Dubai">Dubai (GST)</option>
+        <option value="Asia/Karachi">Karachi (PKT)</option>
+      </select>
+      <div id="mainClock"></div>
+    </div>
+
+    <div id="reminder"></div>
+
+    <div class="mini-clocks">
+      <div class="mini-clock">
+        <h3>Fajr</h3>
+        <div id="fajrClock"></div>
+      </div>
+      <div class="mini-clock">
+        <h3>Zohr</h3>
+        <div id="zohrClock"></div>
+      </div>
+      <div class="mini-clock">
+        <h3>Asr</h3>
+        <div id="asrClock"></div>
+      </div>
+      <div class="mini-clock">
+        <h3>Maghrib</h3>
+        <div id="maghribClock"></div>
+      </div>
+      <div class="mini-clock">
+        <h3>Isha</h3>
+        <div id="ishaClock"></div>
+      </div>
+      <div class="mini-clock">
+        <h3>Jumma</h3>
+        <div id="jummaClock"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
